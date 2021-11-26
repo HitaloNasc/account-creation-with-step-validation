@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="content">
+    <div class="steps">
+      <div class="next-step">01</div>
+      <div class="next-step">></div>
+      <div class="next-step">02</div>
+      <div class="next-step">></div>
+      <div class="next-step">03</div>
+      <div class="next-step">></div>
+      <div class="actual-step">04</div>
+    </div>
+    <h1 class="title">Invite your friends</h1>
+    <form [formGroup]="formInvites" (ngSubmit)="sendInvites()">
+      <div class="form" *ngFor="let obj of amountEmails; let i = index">
+        <label>Email</label>
+        <input class="text-field" type="text">
+      </div>
+      <div class="buttons">
+        <button class="add-button" (click)="addEmailField()"><img src="../../../../assets/icons/add-icon.png"
+            alt="add invite"></button>
+        <button class="skip-button" (click)="skip()">Skip</button>
+        <input type="submit" class="send-button" (click)="sendInvites()" value="Send invites"/>
+      </div>
+    </form>
+  </div>
+</div>

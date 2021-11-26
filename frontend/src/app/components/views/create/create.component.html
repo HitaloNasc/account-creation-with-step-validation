@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="content">
+    <div class="steps">
+      <div class="actual-step">01</div>
+      <div class="next-step">></div>
+      <div class="next-step">02</div>
+      <div class="next-step">></div>
+      <div class="next-step">03</div>
+      <div class="next-step">></div>
+      <div class="next-step">04</div>
+    </div>
+    <h1 class="title">Create your account</h1>
+    <!-- <form class="form" action="">
+      <label for="name">Name</label>
+      <input id="name" class="text-field" type="text" [(ngModel)]="user.name" name="name">
+      
+      <label for="email">Email</label>
+      <input id="email" class="text-field" type="email" [(ngModel)]="user.email" name="email">
+      
+      <label for="password">Password</label>
+      <input id="password" #password="ngModel" class="text-field" type="password" [(ngModel)]="user.password" name="password">
+      <div *ngif="password.invalid">
+        Password deve ser informada
+      </div>
+
+      <button (click)="createUser()" class="button-submit">Create account</button>
+    </form> -->
+
+    <form class="form" [formGroup]="formCreate" (ngSubmit)="createUser()">
+      <div class="field">
+        <label>Name</label>
+        <input class="text-field" type="text" formControlName="name" />
+      </div>
+      <div class="field-invalid" *ngIf="formCreate.controls.name.touched && formCreate.controls.name.invalid">
+        Enter a valid name
+      </div>
+
+      <div class="field">
+        <label>Email</label>
+        <input class="text-field" type="email" formControlName="email" />
+      </div>
+      <div class="field-invalid" *ngIf="formCreate.controls.email.touched && formCreate.controls.email.invalid">
+        Enter a valid email
+      </div>
+
+      <div class="field">
+        <label>Password</label>
+        <input class="text-field" type="password" formControlName="password" />
+      </div>
+      <div class="field-invalid" *ngIf="formCreate.controls.password.touched && formCreate.controls.password.invalid">
+        Password must be at least 8 digits long
+      </div>
+
+      <input class="button-submit" type="submit" value="Create account" [disabled]="formCreate.invalid" />
+    </form>
+  </div>
+</div>

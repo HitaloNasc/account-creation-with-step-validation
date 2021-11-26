@@ -1,0 +1,57 @@
+@font-face {
+    font-family: Gotham;
+    src: url(./assets/fonts/Gotham-Font/GothamMedium.ttf);
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url(./assets/fonts/OpenSans-Font/OpenSans-Regular.ttf);
+}
+:root {
+    --neutral-100: #333840;
+    --neutral-80: #58606E;
+    --neutral-70: #707A8A;
+    --primary: #0A3BB7;
+
+}
+
+body {
+    margin: 0;
+    padding-top: 128px;
+    background-color: #E5E5E5;
+    font-family: Gotham, Arial, sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.actual-step {
+    font-weight: bold;
+    color: var(--neutral-100);
+  }
+.steps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--neutral-70);
+    width: 135px;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 11px;
+    margin-bottom: 10.5px;
+  }
+
+.title {
+    margin: 0px 0px 16px 0px;
+    color: var(--neutral-100);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin: 26.5px 32px;
+  }

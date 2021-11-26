@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="content">
+    <div class="steps">
+      <div class="next-step">01</div>
+      <div class="next-step">></div>
+      <div class="actual-step">02</div>
+      <div class="next-step">></div>
+      <div class="next-step">03</div>
+      <div class="next-step">></div>
+      <div class="next-step">04</div>
+    </div>
+    <h1 class="title">Confirm your email</h1>
+    <p>We sent a code to {{ email }}, please type ie below. If this is not your email, you can <a href="/">change
+        it here.</a></p>
+    <div class="form" action="">
+      <input type="text" [(ngModel)]="formCode.a">
+      <input type="text" [(ngModel)]="formCode.b">
+      <input type="text" [(ngModel)]="formCode.c">
+      <input type="text" [(ngModel)]="formCode.d">
+      <input type="text" [(ngModel)]="formCode.e">
+      <input type="text" [(ngModel)]="formCode.f">
+    </div>
+    <div class="buttons">
+      <button class="resend-button">Resend Code</button>
+      <button class="confirm-button" (click)="valitationCode()" >Confirm</button>
+    </div>
+  </div>

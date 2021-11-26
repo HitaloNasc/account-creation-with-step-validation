@@ -1,0 +1,83 @@
+.container {
+  width: 544px;
+  height: 480px;
+  padding: 0px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(112, 122, 138, 0.5), 0px 4px 24px rgba(175, 186, 204, 0.4);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-conditions {
+  position: relative;
+  color: var(--neutral-80);
+  margin-top: -4px;
+  height: 306px;
+  font-family: "Open Sans";
+  line-height: 16px;
+  font-size: 12px;
+  overflow-y: scroll;
+}
+
+.text-conditions:before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  background: linear-gradient(transparent 273px, #FFFFFF);
+  height: 100%;
+  width: 100%;
+}
+
+.text-conditions::-webkit-scrollbar {
+  width: 4px;
+  height: 157px;
+}
+
+.text-conditions::-webkit-scrollbar-track {
+  background: EBEFF5;
+}
+
+.text-conditions::-webkit-scrollbar-thumb {
+  background-color: #C8D1E0;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  margin: 24px 0px;
+  justify-content: flex-end;
+}
+
+.decline-button {
+  width: 81px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 15px;
+  padding: 8px 12px;
+  height: 36px;
+  color: #B20909;
+  background: #FFFFFF;
+  border-radius: 4px;
+  border: 1px solid #C8D1E0;
+  margin: 0px 10px 0px;
+}
+
+.accept-button {
+  width: 81px;
+  height: 36px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  background-color: var(--primary);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 15px;
+  border: 1px solid var(--primary);
+
+}

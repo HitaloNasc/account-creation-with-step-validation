@@ -1,0 +1,86 @@
+.container {
+  width: 384px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(112, 122, 138, 0.5), 0px 4px 24px rgba(175, 186, 204, 0.4);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  margin-top: -4px;
+  color: var(--neutral-80);
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.form input {
+  width: 45.86px;
+  height: 46px;
+  padding-left: 4px;
+
+  border: 1px solid #C8D1E0;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.container section {
+  margin: 16px 32px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  /* margin: 24px 0px; */
+  margin-top: 24px;
+  justify-content: flex-end;
+  width: 320px;
+}
+
+.resend-button {
+  height: 36px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 15px;
+  padding: 8px 12px;
+  color: var(--primary);
+  background: #FFFFFF;
+  border-radius: 4px;
+  border: 1px solid #C8D1E0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px 0px;
+}
+
+.confirm-button {
+  width: 89px;
+  height: 36px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  background-color: var(--primary);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 15px;
+  border: 1px solid var(--primary);
+
+}
