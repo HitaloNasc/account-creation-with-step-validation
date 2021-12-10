@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Projeto realizado como parte da seleção em LucasPaganini
+Projeto realizado como parte da seleção de Desenvolvedor Júnior em LucasPaganini
 
 ### Tecnologias utilizadas
 
