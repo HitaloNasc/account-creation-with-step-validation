@@ -1,5 +1,9 @@
 # Criação de conta com validação de etapas
 
+<img height="350" align="center" src="https://user-images.githubusercontent.com/54161035/174724652-ac3ddf8a-ef4d-4838-a554-ea14ee6237b6.png">
+
+##
+
 ## Descrição
 
 Projeto realizado como parte da seleção de Desenvolvedor Júnior em LucasPaganini
